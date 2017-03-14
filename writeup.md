@@ -111,7 +111,7 @@ class DataGenerator(object):
 
 #Model
 
-I started with the model(based on the Nvidia paper) presented by david silver in the behavior cloning videos, and then by tweaking cropping layer and removing the bottom 3 convolutional layer the model sucessfully drives the car on track 1 and with some success on track 2. I can clearly observe the difference did by the normalization in this model, removing the normalization layer resulted in the car becoming unstable on the tracks. Dropout is not used in the model as it didn't showed any improved in the model.
+I started with the model(based on the Nvidia paper) presented by david silver in the behavior cloning videos, and then by tweaking cropping layer and removing the bottom 3 convolutional layer the model sucessfully drives the car on track 1 and with some success on track 2. I can clearly observe the difference did by the normalization in this model, removing the normalization layer resulted in the car becoming unstable on the tracks. Dropout is not used in the model as it didn't showed any improvement in the model.
 
 Layer (type) | Output Shape | Params | Connected to
 -------------|--------------|-------|--------------
