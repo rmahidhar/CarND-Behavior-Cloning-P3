@@ -1,6 +1,6 @@
 #Behavior Cloning
 
-The goal of this project was to train a end-to-end convolutional neural network model using keras that would let a car drive itself around the track in a simulator
+The goal of this project is to train an end-to-end convolutional neural network model using keras that would let a car drive itself around the track in a simulator. 
 
 * Data Collection
 * Data Augmentation
