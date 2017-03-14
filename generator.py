@@ -29,9 +29,9 @@ class DataGenerator(object):
         image_choice = np.random.randint(len(self.__data))
         camera_choice = np.random.randint(len(self.__cameras))
         # reads image in RGB, cv2 return in BGR
-        image_filename = self.__image_dir + self.__data[cameras[camera_choice]].values[image_choice].strip()
+        image_filename = self.__image_dir + self.__data[self.__cameras[camera_choice]].values[image_choice].strip()
         image = mpimg.imread(image_filename)
-        steering_angle = self.__data.steering.values[image_choice] + cameras_steering_correction[camera_choice]
+        steering_angle = self.__data.steering.values[image_choice] + self.__cameras_steering_correction[camera_choice]
         return image, steering_angle
 
     def __add_image(self):
