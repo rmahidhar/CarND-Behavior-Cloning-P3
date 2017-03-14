@@ -24,17 +24,17 @@ The driving data has driving log that has pointer to the location of the images 
 
 ![alt text][image1]
 
-The histogram plots the steering angles of the udacity data samples. The driving data has 8036 samples, and removing 20% of samples for validation data left us with 6429 samples for training the model. These fewer samples are not enough for better generalization of the model and requires augmentation tricks to extend the data.
+The histogram plots the steering angles of the udacity data samples. The driving data has 8036 samples, and removing 20% of samples for validation data left us with 6429 samples for training the model. These fewer samples are not enough for better generalization of the model and requires the following augmentation tricks to extend the data.
 
-Each sample has frames from 3 camera positions: left, center and right. Although only central camera is used while driving, we can still use left and right cameras data during training after applying steering angle correction. This increase the number of examples by a factor of 3.
+* Each sample has frames from 3 camera positions: left, center and right. Although only central camera is used while driving, we can still use left and right cameras data during training after applying steering angle correction. This increase the number of examples by a factor of 3.
 
 ![alt text][image2]
 
-Flipping half of the frames horizontally and change the sign of the steering angle, increase the number of examples by a factor of 2.
+* Flipping half of the frames horizontally and change the sign of the steering angle, increase the number of examples by a factor of 2.
 
 ![alt text][image3]
 
-The challenging track is bright at many places and hence augmenting bright image might help in generalizing the model better for driving in the challenging track.
+* The challenging track is bright at many places and hence augmenting bright image might help in generalizing the model better for driving in the challenging track.
 
 ![alt text][image4]
 
